@@ -20,16 +20,15 @@
     </video>
 
     <div class="Login">
-        <form>
-
+        <form action="login.php" method="POST">
             <h2>TrackR</h2>
 
             <div class="i1">
-                <input type="text" placeholder="Username">
+                <input type="text" name="username" placeholder="Username" required>
             </div>
 
             <div class="i1">
-                <input type="password" placeholder="Password">
+                <input type="password" name="password" placeholder="Password" required>
             </div>
 
             <div class="rb">
@@ -38,7 +37,7 @@
                 <a class="a" href="#"> Forget Password? </a>
             </div>
 
-            <button> LOG IN</button>
+            <button type="submit"> LOG IN</button>
 
             <div class="rl">
                 <label>Don't Have an account?</label>
